@@ -50,7 +50,7 @@ public class VeiculoService {
     public Veiculo removerVeiculo(String placa) {
         for (Veiculo veiculo : veiculosDB) {
             if (veiculo.getPlaca().equalsIgnoreCase(placa)) {
-                veiculosDB.remove(veiculo); // Removendo o veículo encontrado
+                veiculosDB.remove(veiculo); 
                 return veiculo;
             }
         }
