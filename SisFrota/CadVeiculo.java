@@ -71,7 +71,7 @@ public class CadVeiculo {
                     System.out.println("Entrada inválida. Por favor, digite um número.");
                 }
             } else {
-                clear(); // Limpa a tela em caso de erro
+                clear(); 
                 System.out.println("Campo não pode estar em branco. Por favor, escolha uma opção");
             } System.out.println("Sistema de Gerenciamento de Frotas");
             System.out.println("MENU DE OPÇÕES:");
@@ -142,15 +142,15 @@ public class CadVeiculo {
                     if (tipoVeiculo >= 1 && tipoVeiculo <= 2) {
                         return tipoVeiculo;
                     } else {
-                        clear(); // Limpa a tela em caso de erro
+                        clear();
                         System.out.println("Opção inválida. Por favor, escolha 1 ou 2.");
                     }
                 } catch (NumberFormatException e) {
-                    clear(); // Limpa a tela em caso de erro
+                    clear(); 
                     System.out.println("Entrada inválida. Por favor, digite um número.");
                 }
             } else {
-                clear(); // Limpa a tela em caso de erro
+                clear(); 
                 System.out.println("Campo não pode estar em branco. Por favor, escolha um tipo de veículo.");
             }
         }
@@ -164,7 +164,7 @@ public class CadVeiculo {
             if (!entrada.trim().isEmpty()) {
                 return entrada;
             } else {
-                clear(); // Limpa a tela em caso de erro
+                clear(); 
                 System.out.println("Campo não pode estar em branco.");
             }
         }
@@ -196,7 +196,7 @@ public class CadVeiculo {
             if (placa.length() == 7) {
                 return placa;
             } else {
-                clear(); // Limpa a tela em caso de erro
+                clear(); 
                 System.out.println("A placa deve ter exatamente 7 caracteres.");
             }
         }
@@ -225,7 +225,7 @@ public class CadVeiculo {
             System.out.print("A moto possui partida elétrica? (1-Sim, 2-Não) ");
             if (scan.hasNextInt()) {
                 partidaEletrica = scan.nextInt();
-                scan.nextLine(); // Limpa o buffer
+                scan.nextLine(); 
                 if (partidaEletrica == 1) {
                     return true;
                 } else if (partidaEletrica == 2) {
@@ -235,7 +235,7 @@ public class CadVeiculo {
                 }
             } else {
                 System.out.print("Entrada inválida. Digite 1 ou 2: ");
-                scan.nextLine(); // Limpa o buffer
+                scan.nextLine(); 
             }
         }
     }
